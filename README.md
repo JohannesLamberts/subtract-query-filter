@@ -1,7 +1,7 @@
-<h1 align="center">filter-logic-subtract</h1>
+<h1 align="center">subtract-query-filter</h1>
 
-[![CircleCI](https://img.shields.io/circleci/project/github/JohannesLamberts/filter-logic-subtract/master.svg)](https://circleci.com/gh/JohannesLamberts/filter-logic-subtract)
-[![Coverage](https://img.shields.io/codecov/c/github/JohannesLamberts/filter-logic-subtract/master.svg)](https://codecov.io/gh/JohannesLamberts/filter-logic-subtract)
+[![CircleCI](https://img.shields.io/circleci/project/github/JohannesLamberts/subtract-query-filter/master.svg)](https://circleci.com/gh/JohannesLamberts/subtract-query-filter)
+[![Coverage](https://img.shields.io/codecov/c/github/JohannesLamberts/subtract-query-filter/master.svg)](https://codecov.io/gh/JohannesLamberts/subtract-query-filter)
 
 ## Use case
 
@@ -51,9 +51,9 @@ export interface Filter {
 ```
 The operations are restricted to the above.
 
-`{ $eq: VAL }` must be replaced by `{ $in: [ VAL ] }`.
+`{ $eq: VAL }` must be expressed as `{ $in: [ VAL ] }`.
 
-`{ $ne: VAL }` must be replaced by `{ $nin: [ VAL ] }`. 
+`{ $ne: VAL }` must be expressed as `{ $nin: [ VAL ] }`. 
 
 So far, it is not possible to use query operators like $and, $or, $all etc... 
 
