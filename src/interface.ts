@@ -5,7 +5,7 @@ export type FilterConstraint = {
     $gt?: any;
     $lte?: any;
     $gte?: any;
-}
+};
 
 export type FilterConstraintKey = keyof FilterConstraint;
 

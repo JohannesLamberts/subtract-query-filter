@@ -12,7 +12,7 @@ export enum EFullfillable {
 }
 
 export function fullfillableConstraint(constraint: FilterConstraint,
-                                       isReduced = false): EFullfillable {
+                                       isReduced: boolean = false): EFullfillable {
 
     const reduced = isReduced
         ? constraint

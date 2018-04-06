@@ -14,7 +14,7 @@ describe('passes', function () {
 
     it('should return true, if the object DID pass the constraint', function () {
         for (const constraint of ConstraintsPass) {
-            expect(passes({ field: constraint }, { field: 5 })).to.be.true;
+            expect(passes({ field: constraint }, { field: 5 })).to.eq(true);
         }
     });
 
@@ -29,7 +29,7 @@ describe('passes', function () {
 
     it('should return false, if the object DID NOT passed the constraint', function () {
         for (const constraint of ConstraintsFail) {
-            expect(passes({ field: constraint }, { field: 5 })).to.be.false;
+            expect(passes({ field: constraint }, { field: 5 })).to.eq(false);
         }
     });
 });
