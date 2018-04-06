@@ -1,9 +1,9 @@
 import {
     Filter,
     FilterConstraint
-}                           from './interface';
-import { reduceConstraint } from './reduce';
-import has = Reflect.has;
+}                               from './interface';
+import { reduceConstraint }     from './reduce';
+import { constraintHas as has } from './subtractConstraint';
 
 export enum EFullfillable {
     eAlways,
