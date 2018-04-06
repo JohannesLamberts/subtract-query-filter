@@ -1,8 +1,8 @@
 import {
     Filter,
     FilterConstraint
-} from './interface';
-import has = Reflect.has;
+}                             from './interface';
+import { constraintHas as has } from './subtractConstraint';
 
 export function passesContraint(constraint: FilterConstraint, value: any): boolean {
     if (constraint.$in && constraint.$in.indexOf(value) === -1) {
